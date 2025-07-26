@@ -31,7 +31,19 @@
 
 ## 📁 Project Structure
 
-<pre> ``` ai-code-assistant/ ├── backend/ │ ├── main.py # FastAPI app and route handlers │ ├── ollama_client.py # Sends prompts to Ollama model │ ├── prompt_templates.py # Task-specific prompt builders ├── frontend/ │ └── app.py # Streamlit UI for user interaction ├── model_handler.py # Helper to dispatch tasks + route prompts ├── requirements.txt # Python dependencies └── README.md # Project documentation ``` </pre>
+<pre> ``` 
+├── backend/
+│ ├── main.py # FastAPI app and route handlers
+│ ├── ollama_client.py # Sends prompts to Ollama model
+│ ├── prompt_templates.py # Task-specific prompt builders
+├── frontend/
+│ └── app.py # Streamlit UI for user interaction
+├── model_handler.py # Helper to dispatch tasks + route prompts
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
+
+ ``` </pre>
 
 ---
 
