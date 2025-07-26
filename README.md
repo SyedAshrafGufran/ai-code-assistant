@@ -21,7 +21,7 @@
 |----------|------------|
 | **Frontend** | Streamlit |
 | **Backend** | FastAPI |
-| **Model Inference** | Hugging Face Transformers / Ollama |
+| **Model Inference** |  Ollama |
 | **LLMs Tested** | GPT-2, CodeLlama, StarCoder (small variants) |
 | **Prompt Management** | Custom Templates |
 | **Python Version** | 3.10+ |
@@ -35,10 +35,10 @@
 ├── backend/
 │ ├── main.py # FastAPI app and route handlers
 │ ├── ollama_client.py # Sends prompts to Ollama model
-│ ├── prompt_templates.py # Task-specific prompt builders
+│ └──  prompt_templates.py # Task-specific prompt builders
 ├── frontend/
-│ └── app.py # Streamlit UI for user interaction
-├── model_handler.py # Helper to dispatch tasks + route prompts
+│ ├── app.py # Streamlit UI for user interaction
+│ └── model_handler.py # Helper to dispatch tasks + route prompts
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
@@ -79,3 +79,16 @@
    streamlit run frontend/app.py
 
 
+## 📌 Notes
+
+- Works best with lighter LLMs (like **GPT-2** or **CodeLlama 7B**).
+- Requires **~4GB+ RAM** minimum if running locally.
+- Can be integrated with hosted APIs like **Hugging Face Inference API** if desired.
+
+---
+
+## 🧑‍💻 Author
+
+**Syed Ashraf Gufran**  
+_Machine Learning & AI Enthusiast_
+[LinkedIn](https://www.linkedin.com/in/syed-ashraf-gufran) | [GitHub](https://github.com/SyedAshrafGufran)
